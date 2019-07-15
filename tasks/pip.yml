@@ -1,2 +1,4 @@
 - name: AWS CLI | Install pip
-  action: apt pkg=python-pip state=installed
+  apt:
+    pkg: python-pip
+    state: present
